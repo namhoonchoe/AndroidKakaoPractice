@@ -40,10 +40,14 @@ android {
 
 dependencies {
     val nav_version = "2.5.3"
-    //jetpack 네비게이션 종속성 추가!!
-    // Java language implementation
-    implementation("androidx.navigation:navigation-fragment:$nav_version")
-    implementation("androidx.navigation:navigation-ui:$nav_version")
+    val lifecycle_version = "2.6.2"
+
+    //뷰모델 => 라이프 사이클 관련
+    // ViewModel
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version")
+    //라이브 데이터 => 옵저버 패턴 참조
+    // LiveData
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version")
 
     // Kotlin
     implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")
@@ -65,8 +69,5 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
-    val lifecycle_version = "2.2.0"
 
-    implementation("androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version")
-    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version")
 }
