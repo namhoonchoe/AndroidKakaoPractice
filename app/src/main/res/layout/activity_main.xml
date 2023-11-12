@@ -5,6 +5,8 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1"
         tools:context=".MainActivity"
         android:background="#D8D8D8"
 >
@@ -31,8 +33,8 @@
             android:layout_centerHorizontal="true"
             android:background="#fff"
             app:labelVisibilityMode="unlabeled"
-            app:itemIconSize="36dp"
-            app:menu="@menu/bottom_nav_menu" />
+            app:itemIconSize="24dp"
+            app:menu="@menu/bottom_nav_menu"/>
 
     <!-- res폴더의 메뉴 패키지에  bottom_nav_menu 등록 해야함 -->
 </LinearLayout>

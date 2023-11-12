@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- 네비게이션 메뉴 등록 해야함 -->
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+
     <item
-            android:id="@+id/menu_home"
-            android:title="홈"
+            android:id="@+id/profileFragment"
+            android:title="개인페이지"
             android:icon="@drawable/person_icon"
     />
 
+
     <item
-            android:id="@+id/menu_chat"
+            android:id="@+id/chatFragment"
             android:title="채팅"
             android:icon="@drawable/chat_icon"
     />
 
     <item
-            android:id="@+id/menu_group_chat"
+            android:id="@+id/groupChatFragment"
             android:title="단톡"
             android:icon="@drawable/group_chat_icon"
     />
 
     <item
-            android:id="@+id/menu_shop"
+            android:id="@+id/shopFragment"
             android:title="쇼핑"
             android:icon="@drawable/shop_icon"
     />
 
-    <item
-            android:id="@+id/menu_more"
-            android:title="더보기"
-            android:icon="@drawable/more_icon"
-    />
+
+
+
 </menu>

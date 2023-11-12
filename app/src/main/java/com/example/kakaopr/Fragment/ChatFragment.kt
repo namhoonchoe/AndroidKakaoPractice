@@ -10,7 +10,7 @@ import com.example.kakaopr.databinding.FragmentChatBinding
 
 class ChatFragment : Fragment() {
     //????
-   private  var chatBinding:FragmentChatBinding? = null
+   private var chatBinding:FragmentChatBinding? = null
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -19,6 +19,7 @@ class ChatFragment : Fragment() {
         //
         savedInstanceState: Bundle?
         //
+
     ): View? {
         // Inflate the layout for this fragment
         val binding = FragmentChatBinding.inflate(inflater, container, false)
